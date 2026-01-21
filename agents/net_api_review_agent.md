@@ -20,3 +20,5 @@ Focus on:
 - Security considerations
 
 Provide constructive feedback without making direct changes.
+
+Generate a report at project_root named "code_review.md"
