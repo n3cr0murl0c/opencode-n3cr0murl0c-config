@@ -2,10 +2,10 @@
 name: project-docs
 description: >
   project documentation style guide and writing standards.
-Trigger: When writing documentation for project features, tutorials, or guides.
+  Trigger: When writing documentation for project features, tutorials, or guides.
 license: Apache-2.0
 metadata:
-  author: Erick Escobar
+  author: n3cr0murl0c
   version: "1.0"
   scope: [root]
   auto_invoke: "Writing documentation"
@@ -20,7 +20,6 @@ Use this skill when writing project documentation for:
 - API/SDK references
 - Tutorials and guides
 - Release notes
-- Technical Documentation
 
 ## Brand Voice
 
@@ -133,11 +132,6 @@ docs/
 ├── compliance/
 └── developer-guide/
 ```
-
-## Internationalization
-
-- English
-- Spanish (Español) - Latin America Transalte the docs generated in english to Spanish
 
 ## Resources
 

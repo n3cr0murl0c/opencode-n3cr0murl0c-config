@@ -2,10 +2,10 @@
 name: project-changelog
 description: >
   Manages changelog entries for project components following keepachangelog.com format.
-Trigger: When creating PRs, adding changelog entries, or working with any CHANGELOG.md file in each module like ui/, api/features/feature1, mcp_server/, or project/,etc.
+Trigger: When creating PRs, adding changelog entries, or working with any CHANGELOG.md file in ui/, api/, mcp_server/, or project/.
 license: Apache-2.0
 metadata:
-  author: Erick Escobar
+  author: project-cloud
   version: "1.0"
   scope: [root, ui, api, sdk, mcp_server]
   auto_invoke:

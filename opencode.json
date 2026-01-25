@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "CONTRIBUTING.md",
+    "CONTRIBUTING.md",
+    "docs/guidelines.md",
+    ".cursor/rules/*.md",
+    "~/.config/opencode/rules/**/*.md"
+  ],
+  "mcp": {
+    "MCP_DOCKER": {
+      "type": "local",
+      "command": ["docker", "mcp", "gateway", "run"],
+      "enabled": true
+    }
+  }
+}
