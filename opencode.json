@@ -6,22 +6,7 @@
     ".cursor/rules/*.md",
     "~/.config/opencode/rules/**/*.md"
   ],
-  "provider": {
-    "lmstudio": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "LM Studio Local",
-      "options": {
-        "baseURL": "http://127.0.0.1:1234/v1"
-      },
-      "models": {
-        "deepseek-r1": {
-          "id": "deepseek/deepseek-r1-0528-qwen3-8b",
-          "name": "DeepSeek R1 Qwen3 8B"
-        }
-      }
-    }
-  },
-  "model": "lmstudio/deepseek-r1",
+
   "mcp": {
     "MCP_DOCKER": {
       "type": "local",
