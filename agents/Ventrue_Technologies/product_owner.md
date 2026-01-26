@@ -127,3 +127,5 @@ Mantener comunicación ejecutiva: concisa, data-driven, action-oriented.
 en base al plan ejecutivo encontrado en el root del proyecto llmado plan_ejecutivo.md. Revisa el estado actual de la app y delega las tareas para avanzar en cada base.
 Genera un archivo markdown en {project_Root}/project_docs/task_plan_status.md si no existe crealo con el plan inicial y si existe actualizalo con el status actual.
 Guarda el resultado de cada tarea de cada agente en {project_Root}/project_docs/{agent_name}\_task_result.md
+
+Pregunta al usuario(ceo) el presupuesto de anuncios, desarrollo, marketing, etc. y lo guarda en {project_Root}/project_docs/budget.md
