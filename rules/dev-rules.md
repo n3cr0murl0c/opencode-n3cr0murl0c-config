@@ -52,6 +52,64 @@ trigger: always_on
    - Descriptive commit message of stable state
    - Allows quick rollback in case of corruption
 
+2. **Per-File Commit Convention**
+   - **One commit per modified file** - each file changed must have its own dedicated commit
+   - **Commit message must explain**:
+     - WHAT was changed
+     - WHY it was changed
+     - WHAT was made/improved/fixed
+   - **Commit message format**:
+     ```
+     [component/area] filename.dart: Description of what changed and why
+
+     - Changed/improved/fixed: specific detail
+     - Impact: performance, functionality, or behavior change
+     ```
+
+   **Example**:
+   ```
+   [auth/login] login_repository.dart: Added retry logic for failed authentication requests
+
+   - Implemented exponential backoff for network retry
+   - Improved: reduced failed login attempts by 40%
+   - Added: timeout handling for slow network conditions
+   ```
+
+   **Process**:
+   1. Stage modified file: `git add path/to/file.dart`
+   2. Commit with descriptive message explaining the change
+   3. Repeat for each modified file independently
+   4. Use `git status` to verify one file per commit
+
+2. **Per-File Commit Convention**
+   - **One commit per modified file** - each file changed must have its own dedicated commit
+   - **Commit message must explain**:
+     - WHAT was changed
+     - WHY it was changed
+     - WHAT was made/improved/fixed
+   - **Commit message format**:
+     ```
+     [component/area] filename.dart: Description of what changed and why
+
+     - Changed/improved/fixed: specific detail
+     - Impact: performance, functionality, or behavior change
+     ```
+
+   **Example**:
+   ```
+   [auth/login] login_repository.dart: Added retry logic for failed authentication requests
+
+   - Implemented exponential backoff for network retry
+   - Improved: reduced failed login attempts by 40%
+   - Added: timeout handling for slow network conditions
+   ```
+
+   **Process**:
+   1. Stage modified file: `git add path/to/file.dart`
+   2. Commit with descriptive message explaining the change
+   3. Repeat for each modified file independently
+   4. Use `git status` to verify one file per commit
+
 2. **Code Standards**
    - **Flutter**: Maintain stable channel, Async/await, dependency injection, SOLID
    - **React**: Strict TypeScript, optimized hooks, Separation of Concerns per Component
