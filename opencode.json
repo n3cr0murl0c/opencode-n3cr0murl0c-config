@@ -12,6 +12,11 @@
       "type": "local",
       "command": ["docker", "mcp", "gateway", "run"],
       "enabled": true
+    },
+    "notebooklm-mcp-server": {
+      "type": "local",
+      "command": ["/home/n3cr0murl0c/.local/bin/notebooklm-mcp"],
+      "enabled": true
     }
   }
 }
