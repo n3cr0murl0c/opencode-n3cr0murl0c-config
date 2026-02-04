@@ -7,7 +7,6 @@ trigger: always_on
 ## Session Initialization Protocol
 
 1. **Mandatory Initial Analysis**
-
    - Search and read `AGENTS.MD` (standard project context file)
    - If it doesn't exist, create it with the project structure
    - Review `README.md` to understand general architecture and business rules (what the application does or aims to achieve)
@@ -28,7 +27,6 @@ trigger: always_on
 ### Phase 1: Analysis and Planning
 
 1. **Before Modifying Code**
-
    - Analyze user request
    - If the request is a question, explain to the user so they understand the technical solutions
    - Present implementation alternatives
@@ -50,13 +48,11 @@ trigger: always_on
 ### Phase 2: Implementation
 
 1. **Preventive Versioning**
-
    - Create local commit (without push) before breaking changes
    - Descriptive commit message of stable state
    - Allows quick rollback in case of corruption
 
 2. **Code Standards**
-
    - **Flutter**: Maintain stable channel, Async/await, dependency injection, SOLID
    - **React**: Strict TypeScript, optimized hooks, Separation of Concerns per Component
    - **C# .NET**: Async/await, dependency injection, SOLID
@@ -104,7 +100,6 @@ trigger: always_on
 2. **Stress Testing with Worst Case Scenarios**
 
    **Mandatory Standards:**
-
    - **95% minimum success rate** in all stress tests
    - **Maximum response time: 1 minute** for image processing
    - **Always use worst case possible**: real HD images, maximum concurrency, maximum load scenarios
@@ -130,7 +125,6 @@ trigger: always_on
 - ✅ Performance under concurrent load
 
 3. **Fullstack Integration Tests (.NET + Vite)**
-
    - Start API: `dotnet run`
    - Start Frontend: `bun run dev`
    - Execute E2E tests with Chrome DevTools
@@ -148,7 +142,7 @@ trigger: always_on
 
 ### AGENTS.MD - Change Log
 
-Update after each significant modification:
+Update after each significant modification, generate a commit per file modified.
 
 ```markdown
 ## [YYYY-MM-DD HH:MM] - Modified Component
@@ -211,28 +205,23 @@ Maintain updated status:
 ### Performance Benchmarks
 
 - **Flutter**:
-
   - Consistent 60 FPS
   - Startup time < 2s
   - Memory usage < 150MB on mid-range devices
 
 - **React**:
-
   - First Contentful Paint < 1.5s
   - Time to Interactive < 3s
   - Lighthouse score > 90
 
 - **C# API**:
-
   - **Stress Testing Standards**:
-
     - ✅ **95% minimum Success Rate** in concurrent tests
     - ✅ **Image Processing: < 1 minute** (vs ~22ms achieved)
     - ✅ **HD Images Support**: minimum 100KB (Honor X8b quality)
     - ✅ **Worst Case Testing**: always use most demanding scenarios
 
   - **Performance Metrics**:
-
     - Response time < 200ms (p95) - normal operations
     - **Image Processing**: < 60,000ms (1 minute maximum)
     - Throughput > 1000 req/s - normal operations
