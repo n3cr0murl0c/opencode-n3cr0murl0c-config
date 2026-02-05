@@ -59,6 +59,7 @@ trigger: always_on
      - WHY it was changed
      - WHAT was made/improved/fixed
    - **Commit message format**:
+
      ```
      [component/area] filename.dart: Description of what changed and why
 
@@ -67,6 +68,7 @@ trigger: always_on
      ```
 
    **Example**:
+
    ```
    [auth/login] login_repository.dart: Added retry logic for failed authentication requests
 
@@ -81,13 +83,14 @@ trigger: always_on
    3. Repeat for each modified file independently
    4. Use `git status` to verify one file per commit
 
-2. **Per-File Commit Convention**
+3. **Per-File Commit Convention**
    - **One commit per modified file** - each file changed must have its own dedicated commit
    - **Commit message must explain**:
      - WHAT was changed
      - WHY it was changed
      - WHAT was made/improved/fixed
    - **Commit message format**:
+
      ```
      [component/area] filename.dart: Description of what changed and why
 
@@ -96,6 +99,7 @@ trigger: always_on
      ```
 
    **Example**:
+
    ```
    [auth/login] login_repository.dart: Added retry logic for failed authentication requests
 
@@ -110,7 +114,7 @@ trigger: always_on
    3. Repeat for each modified file independently
    4. Use `git status` to verify one file per commit
 
-2. **Code Standards**
+4. **Code Standards**
    - **Flutter**: Maintain stable channel, Async/await, dependency injection, SOLID
    - **React**: Strict TypeScript, optimized hooks, Separation of Concerns per Component
    - **C# .NET**: Async/await, dependency injection, SOLID
@@ -118,7 +122,7 @@ trigger: always_on
    - Consistent and descriptive naming
    - Comments only when logic is not self-explanatory (no emojis)
 
-3. **Logging**
+5. **Logging**
    - **Flutter**: Use `debugPrint()` exclusively
    - **React**: Use `console.log/warn/error`
    - **C#**: Use ILogger (serilog) with appropriate levels
@@ -197,6 +201,10 @@ trigger: always_on
    - Confirm applied optimizations
 
 ## Continuous Documentation
+
+### Add Comments to Code
+
+Add comments to explain the purpose of each method/class of code, especially complex logic. so it can later be exported into a XML with openAPi Swagger (for dotnet) and for frontend techs quick explanation of the methods.
 
 ### AGENTS.MD - Change Log
 

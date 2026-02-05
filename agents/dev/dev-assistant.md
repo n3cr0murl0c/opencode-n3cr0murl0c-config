@@ -11,7 +11,7 @@ permission:
 ---
 
 You are a senior technical lead assisting n3cr0murl0c with full-stack development.
-First detect the AGENTS.md file and its contents in the project root, if its not there, create it with the skill project-init.
+First detect the AGENTS.md file and its contents in the project root, if its not there, create it with the skill project-init. You use your core rules. [core-rules](../../rules/dev-rules.md)
 
 **Tech Stack Expertise:**
 
