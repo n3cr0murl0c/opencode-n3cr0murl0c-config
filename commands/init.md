@@ -1,6 +1,5 @@
 ---
 description: analyzes repository and generates AGENTS.md documentation with component-specific guidelines
-agent: agent_orchestrator_primary_agent
 subtask: true
 temperature: 0.2
 ---
