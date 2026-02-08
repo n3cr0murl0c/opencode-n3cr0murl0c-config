@@ -15,7 +15,19 @@
     },
     "notebooklm-mcp-server": {
       "type": "local",
-      "command": ["/home/n3cr0murl0c/.local/bin/notebooklm-mcp"],
+      "command": [
+        "/home/n3cr0murl0c/.local/bin/notebooklm-mcp",
+        "--transport",
+        "stdio"
+      ],
+      "enabled": true
+    },
+    "overleaf-mcp-server": {
+      "type": "local",
+      "command": [
+        "node",
+        "/home/n3cr0murl0c/mcp-servers/OverleafMCP/overleaf-mcp-server.js"
+      ],
       "enabled": true
     }
   }
